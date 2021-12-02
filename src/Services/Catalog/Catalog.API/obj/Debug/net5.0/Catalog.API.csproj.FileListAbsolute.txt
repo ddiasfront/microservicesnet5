@@ -48,3 +48,8 @@ C:\Users\U003860\source\repos\microservicesnet5\src\Services\Catalog\Catalog.API
 C:\Users\U003860\source\repos\microservicesnet5\src\Services\Catalog\Catalog.API\obj\Debug\net5.0\ref\Catalog.API.dll
 C:\Users\U003860\source\repos\microservicesnet5\src\Services\Catalog\Catalog.API\obj\Debug\net5.0\Catalog.API.pdb
 C:\Users\U003860\source\repos\microservicesnet5\src\Services\Catalog\Catalog.API\obj\Debug\net5.0\Catalog.API.genruntimeconfig.cache
+C:\Users\U003860\source\repos\microservicesnet5\src\Services\Catalog\Catalog.API\bin\Debug\net5.0\runtimes\linux\native\libsnappy64.so
+C:\Users\U003860\source\repos\microservicesnet5\src\Services\Catalog\Catalog.API\bin\Debug\net5.0\runtimes\linux\native\libzstd.so
+C:\Users\U003860\source\repos\microservicesnet5\src\Services\Catalog\Catalog.API\bin\Debug\net5.0\runtimes\osx\native\libsnappy64.dylib
+C:\Users\U003860\source\repos\microservicesnet5\src\Services\Catalog\Catalog.API\bin\Debug\net5.0\runtimes\osx\native\libzstd.dylib
+C:\Users\U003860\source\repos\microservicesnet5\src\Services\Catalog\Catalog.API\obj\Debug\net5.0\Catalog.API.csproj.AssemblyReference.cache

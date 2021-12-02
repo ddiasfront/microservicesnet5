@@ -17,6 +17,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Catalog.API.Entities;
 
 namespace Catalog.API
 {
@@ -111,17 +112,6 @@ namespace Catalog.API
             });
         }
 
-        [CollectionLocation("Products", "CatalogDB")]
-        public class Product : IDocument
-        {
-            public ObjectId Id { get; set; }
-            public string Name { get; set; }
-            public string Category { get; set; }
-            public string Summary { get; set; }
-            public string Description { get; set; }
-            public string ImageFile { get; set; }
-            public double Price { get; set; }
-            public DocumentVersion Version { get; set; }
-        }
+       
     }
 }

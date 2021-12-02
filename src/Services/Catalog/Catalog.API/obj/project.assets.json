@@ -275,7 +275,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "Microsoft.NETCore.Platforms/2.1.2": {
+      "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -327,7 +327,7 @@
           "lib/net5.0/Mongo.Migration.dll": {}
         }
       },
-      "MongoDB.Bson/2.13.1": {
+      "MongoDB.Bson/2.14.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -339,12 +339,12 @@
           "lib/netstandard2.1/MongoDB.Bson.dll": {}
         }
       },
-      "MongoDB.Driver/2.13.1": {
+      "MongoDB.Driver/2.14.0": {
         "type": "package",
         "dependencies": {
-          "MongoDB.Bson": "2.13.1",
-          "MongoDB.Driver.Core": "2.13.1",
-          "MongoDB.Libmongocrypt": "1.2.2"
+          "MongoDB.Bson": "2.14.0",
+          "MongoDB.Driver.Core": "2.14.0",
+          "MongoDB.Libmongocrypt": "1.3.0"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {}
@@ -353,13 +353,13 @@
           "lib/netstandard2.1/MongoDB.Driver.dll": {}
         }
       },
-      "MongoDB.Driver.Core/2.13.1": {
+      "MongoDB.Driver.Core/2.14.0": {
         "type": "package",
         "dependencies": {
           "DnsClient": "1.4.0",
-          "MongoDB.Bson": "2.13.1",
-          "MongoDB.Libmongocrypt": "1.2.2",
-          "SharpCompress": "0.23.0",
+          "MongoDB.Bson": "2.14.0",
+          "MongoDB.Libmongocrypt": "1.3.0",
+          "SharpCompress": "0.30.1",
           "System.Buffers": "4.5.1"
         },
         "compile": {
@@ -379,6 +379,22 @@
           "build/_._": {}
         },
         "runtimeTargets": {
+          "runtimes/linux/native/libsnappy64.so": {
+            "assetType": "native",
+            "rid": "linux"
+          },
+          "runtimes/linux/native/libzstd.so": {
+            "assetType": "native",
+            "rid": "linux"
+          },
+          "runtimes/osx/native/libsnappy64.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/osx/native/libzstd.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
           "runtimes/win/native/libzstd.dll": {
             "assetType": "native",
             "rid": "win"
@@ -393,7 +409,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.2.2": {
+      "MongoDB.Libmongocrypt/1.3.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -537,16 +553,13 @@
           "lib/netstandard1.3/Serilog.Sinks.RollingFile.dll": {}
         }
       },
-      "SharpCompress/0.23.0": {
+      "SharpCompress/0.30.1": {
         "type": "package",
-        "dependencies": {
-          "System.Text.Encoding.CodePages": "4.5.1"
-        },
         "compile": {
-          "lib/netstandard2.0/SharpCompress.dll": {}
+          "lib/net5.0/SharpCompress.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/SharpCompress.dll": {}
+          "lib/net5.0/SharpCompress.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/5.6.3": {
@@ -854,25 +867,6 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Text.Encoding.dll": {}
-        }
-      },
-      "System.Text.Encoding.CodePages/4.5.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.1.2",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
         }
       },
       "System.Text.Encoding.Extensions/4.0.11": {
@@ -1275,21 +1269,19 @@
         "microsoft.extensions.primitives.nuspec"
       ]
     },
-    "Microsoft.NETCore.Platforms/2.1.2": {
-      "sha512": "mOJy3M0UN+LUG21dLGMxaWZEP6xYpQEpLuvuEQBaownaX4YuhH6NmNUlN9si+vNkAS6dwJ//N1O4DmLf2CikVg==",
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/2.1.2",
+      "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
-        "runtime.json",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "runtime.json"
       ]
     },
     "Microsoft.NETCore.Targets/1.1.0": {
@@ -1337,93 +1329,104 @@
         "mongo.migration.nuspec"
       ]
     },
-    "MongoDB.Bson/2.13.1": {
-      "sha512": "B/AI2we7YwfFuNcXr4jlCnVI5dJp+g8vkyj3Shi/bOpGhZQaxW4jK/NiiTwYvqxaMOe4MtVR+6Zlk4D2zalC7A==",
+    "MongoDB.Bson/2.14.0": {
+      "sha512": "N96X3aExk5hN7WmNdxgNijfbBSOjazd2H1lJO79u2YD2LO472EBihtVjzbKIeUUs4NW+9tCqyyyrvTVNYB1apw==",
       "type": "package",
-      "path": "mongodb.bson/2.13.1",
+      "path": "mongodb.bson/2.14.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "License.txt",
-        "lib/net452/MongoDB.Bson.dll",
-        "lib/net452/MongoDB.Bson.xml",
-        "lib/netstandard1.5/MongoDB.Bson.dll",
-        "lib/netstandard1.5/MongoDB.Bson.xml",
+        "lib/net472/MongoDB.Bson.dll",
+        "lib/net472/MongoDB.Bson.xml",
         "lib/netstandard2.0/MongoDB.Bson.dll",
         "lib/netstandard2.0/MongoDB.Bson.xml",
         "lib/netstandard2.1/MongoDB.Bson.dll",
         "lib/netstandard2.1/MongoDB.Bson.xml",
-        "mongodb.bson.2.13.1.nupkg.sha512",
+        "mongodb.bson.2.14.0.nupkg.sha512",
         "mongodb.bson.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Driver/2.13.1": {
-      "sha512": "BGpE1Ce33T3MrStgxC4CPLVDA2ngsI+WZk4SYn+ycOaU5uQ7zwbQzqpdzHrS7EcMNVpD9r2wnpjos0nxhxvshw==",
+    "MongoDB.Driver/2.14.0": {
+      "sha512": "gpOYTZ/s48aAVcRrn7aydNarBN1qc+EY570YaiGBKVM/r6ElJu+AsYj6NtIPESRYxKMYNPLReu9oTUsEyVVSzw==",
       "type": "package",
-      "path": "mongodb.driver/2.13.1",
+      "path": "mongodb.driver/2.14.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "License.txt",
-        "lib/net452/MongoDB.Driver.dll",
-        "lib/net452/MongoDB.Driver.xml",
-        "lib/netstandard1.5/MongoDB.Driver.dll",
-        "lib/netstandard1.5/MongoDB.Driver.xml",
+        "lib/net472/MongoDB.Driver.dll",
+        "lib/net472/MongoDB.Driver.xml",
         "lib/netstandard2.0/MongoDB.Driver.dll",
         "lib/netstandard2.0/MongoDB.Driver.xml",
         "lib/netstandard2.1/MongoDB.Driver.dll",
         "lib/netstandard2.1/MongoDB.Driver.xml",
-        "mongodb.driver.2.13.1.nupkg.sha512",
+        "mongodb.driver.2.14.0.nupkg.sha512",
         "mongodb.driver.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Driver.Core/2.13.1": {
-      "sha512": "lLYYMBneLHA9PYwWzbfC3p0NkAqzxbT8ZuinCH9MwR2bgHqu/6cOaJG12twKsnjc6KJVBboY0ufjHt43T9ZLnA==",
+    "MongoDB.Driver.Core/2.14.0": {
+      "sha512": "SkPi6f/5ij6mUlsrOzxkcwq3yqkEkWJh4+pKJMaO2WuoCaW7TNxSni5eB4L5rMbEwp9yht4Vpb1e3xlp7SEycA==",
       "type": "package",
-      "path": "mongodb.driver.core/2.13.1",
+      "path": "mongodb.driver.core/2.14.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "License.txt",
         "THIRD-PARTY-NOTICES",
         "build/MongoDB.Driver.Core.targets",
+        "content/Core/Compression/Snappy/lib/linux/libsnappy64.so",
+        "content/Core/Compression/Snappy/lib/osx/libsnappy64.dylib",
         "content/Core/Compression/Snappy/lib/win/snappy32.dll",
         "content/Core/Compression/Snappy/lib/win/snappy64.dll",
+        "content/Core/Compression/Zstandard/lib/linux/libzstd.so",
+        "content/Core/Compression/Zstandard/lib/osx/libzstd.dylib",
         "content/Core/Compression/Zstandard/lib/win/libzstd.dll",
-        "contentFiles/any/net452/Core/Compression/Snappy/lib/win/snappy32.dll",
-        "contentFiles/any/net452/Core/Compression/Snappy/lib/win/snappy64.dll",
-        "contentFiles/any/net452/Core/Compression/Zstandard/lib/win/libzstd.dll",
-        "contentFiles/any/netstandard1.5/Core/Compression/Snappy/lib/win/snappy32.dll",
-        "contentFiles/any/netstandard1.5/Core/Compression/Snappy/lib/win/snappy64.dll",
-        "contentFiles/any/netstandard1.5/Core/Compression/Zstandard/lib/win/libzstd.dll",
+        "contentFiles/any/net472/Core/Compression/Snappy/lib/linux/libsnappy64.so",
+        "contentFiles/any/net472/Core/Compression/Snappy/lib/osx/libsnappy64.dylib",
+        "contentFiles/any/net472/Core/Compression/Snappy/lib/win/snappy32.dll",
+        "contentFiles/any/net472/Core/Compression/Snappy/lib/win/snappy64.dll",
+        "contentFiles/any/net472/Core/Compression/Zstandard/lib/linux/libzstd.so",
+        "contentFiles/any/net472/Core/Compression/Zstandard/lib/osx/libzstd.dylib",
+        "contentFiles/any/net472/Core/Compression/Zstandard/lib/win/libzstd.dll",
+        "contentFiles/any/netstandard2.0/Core/Compression/Snappy/lib/linux/libsnappy64.so",
+        "contentFiles/any/netstandard2.0/Core/Compression/Snappy/lib/osx/libsnappy64.dylib",
         "contentFiles/any/netstandard2.0/Core/Compression/Snappy/lib/win/snappy32.dll",
         "contentFiles/any/netstandard2.0/Core/Compression/Snappy/lib/win/snappy64.dll",
+        "contentFiles/any/netstandard2.0/Core/Compression/Zstandard/lib/linux/libzstd.so",
+        "contentFiles/any/netstandard2.0/Core/Compression/Zstandard/lib/osx/libzstd.dylib",
         "contentFiles/any/netstandard2.0/Core/Compression/Zstandard/lib/win/libzstd.dll",
+        "contentFiles/any/netstandard2.1/Core/Compression/Snappy/lib/linux/libsnappy64.so",
+        "contentFiles/any/netstandard2.1/Core/Compression/Snappy/lib/osx/libsnappy64.dylib",
         "contentFiles/any/netstandard2.1/Core/Compression/Snappy/lib/win/snappy32.dll",
         "contentFiles/any/netstandard2.1/Core/Compression/Snappy/lib/win/snappy64.dll",
+        "contentFiles/any/netstandard2.1/Core/Compression/Zstandard/lib/linux/libzstd.so",
+        "contentFiles/any/netstandard2.1/Core/Compression/Zstandard/lib/osx/libzstd.dylib",
         "contentFiles/any/netstandard2.1/Core/Compression/Zstandard/lib/win/libzstd.dll",
-        "lib/net452/MongoDB.Driver.Core.dll",
-        "lib/net452/MongoDB.Driver.Core.xml",
-        "lib/netstandard1.5/MongoDB.Driver.Core.dll",
-        "lib/netstandard1.5/MongoDB.Driver.Core.xml",
+        "lib/net472/MongoDB.Driver.Core.dll",
+        "lib/net472/MongoDB.Driver.Core.xml",
         "lib/netstandard2.0/MongoDB.Driver.Core.dll",
         "lib/netstandard2.0/MongoDB.Driver.Core.xml",
         "lib/netstandard2.1/MongoDB.Driver.Core.dll",
         "lib/netstandard2.1/MongoDB.Driver.Core.xml",
-        "mongodb.driver.core.2.13.1.nupkg.sha512",
+        "mongodb.driver.core.2.14.0.nupkg.sha512",
         "mongodb.driver.core.nuspec",
         "packageIcon.png",
+        "runtimes/linux/native/libsnappy64.so",
+        "runtimes/linux/native/libzstd.so",
+        "runtimes/osx/native/libsnappy64.dylib",
+        "runtimes/osx/native/libzstd.dylib",
         "runtimes/win/native/libzstd.dll",
         "runtimes/win/native/snappy32.dll",
         "runtimes/win/native/snappy64.dll"
       ]
     },
-    "MongoDB.Libmongocrypt/1.2.2": {
-      "sha512": "pKrlKJk4wem4MyfkaMqj+sqJ+RwUDnqnt76/Xwm5DDjMzEU5QtDkzQOLq5bVwFhNgC8LMn6Hr22tl5WsmN5+AA==",
+    "MongoDB.Libmongocrypt/1.3.0": {
+      "sha512": "BAvqY/otOsmAGTsmzIYXRFysvpu8X7rYkDzEBX4iBlrF57SB+fD5px9sCPR6sETgfZ6k98qUNS6go5wtY9WOBA==",
       "type": "package",
-      "path": "mongodb.libmongocrypt/1.2.2",
+      "path": "mongodb.libmongocrypt/1.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1432,23 +1435,19 @@
         "content/libmongocrypt.dylib",
         "content/libmongocrypt.so",
         "content/mongocrypt.dll",
-        "contentFiles/any/net452/libmongocrypt.dylib",
-        "contentFiles/any/net452/libmongocrypt.so",
-        "contentFiles/any/net452/mongocrypt.dll",
-        "contentFiles/any/netstandard1.5/libmongocrypt.dylib",
-        "contentFiles/any/netstandard1.5/libmongocrypt.so",
-        "contentFiles/any/netstandard1.5/mongocrypt.dll",
+        "contentFiles/any/net472/libmongocrypt.dylib",
+        "contentFiles/any/net472/libmongocrypt.so",
+        "contentFiles/any/net472/mongocrypt.dll",
         "contentFiles/any/netstandard2.0/libmongocrypt.dylib",
         "contentFiles/any/netstandard2.0/libmongocrypt.so",
         "contentFiles/any/netstandard2.0/mongocrypt.dll",
         "contentFiles/any/netstandard2.1/libmongocrypt.dylib",
         "contentFiles/any/netstandard2.1/libmongocrypt.so",
         "contentFiles/any/netstandard2.1/mongocrypt.dll",
-        "lib/net452/MongoDB.Libmongocrypt.dll",
-        "lib/netstandard1.5/MongoDB.Libmongocrypt.dll",
+        "lib/net472/MongoDB.Libmongocrypt.dll",
         "lib/netstandard2.0/MongoDB.Libmongocrypt.dll",
         "lib/netstandard2.1/MongoDB.Libmongocrypt.dll",
-        "mongodb.libmongocrypt.1.2.2.nupkg.sha512",
+        "mongodb.libmongocrypt.1.3.0.nupkg.sha512",
         "mongodb.libmongocrypt.nuspec",
         "runtimes/linux/native/libmongocrypt.so",
         "runtimes/osx/native/libmongocrypt.dylib",
@@ -1610,19 +1609,19 @@
         "serilog.sinks.rollingfile.nuspec"
       ]
     },
-    "SharpCompress/0.23.0": {
-      "sha512": "HBbT47JHvNrsZX2dTBzUBOSzBt+EmIRGLIBkbxcP6Jef7DB4eFWQX5iHWV3Nj7hABFPCjISrZ8s0z72nF2zFHQ==",
+    "SharpCompress/0.30.1": {
+      "sha512": "XqD4TpfyYGa7QTPzaGlMVbcecKnXy4YmYLDWrU+JIj7IuRNl7DH2END+Ll7ekWIY8o3dAMWLFDE1xdhfIWD1nw==",
       "type": "package",
-      "path": "sharpcompress/0.23.0",
+      "path": "sharpcompress/0.30.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net35/SharpCompress.dll",
-        "lib/net45/SharpCompress.dll",
-        "lib/netstandard1.0/SharpCompress.dll",
-        "lib/netstandard1.3/SharpCompress.dll",
+        "lib/net461/SharpCompress.dll",
+        "lib/net5.0/SharpCompress.dll",
+        "lib/netcoreapp3.1/SharpCompress.dll",
         "lib/netstandard2.0/SharpCompress.dll",
-        "sharpcompress.0.23.0.nupkg.sha512",
+        "lib/netstandard2.1/SharpCompress.dll",
+        "sharpcompress.0.30.1.nupkg.sha512",
         "sharpcompress.nuspec"
       ]
     },
@@ -2988,41 +2987,6 @@
         "system.text.encoding.nuspec"
       ]
     },
-    "System.Text.Encoding.CodePages/4.5.1": {
-      "sha512": "4J2JQXbftjPMppIHJ7IC+VXQ9XfEagN92vZZNoG12i+zReYlim5dMoXFC1Zzg7tsnKDM7JPo5bYfFK4Jheq44w==",
-      "type": "package",
-      "path": "system.text.encoding.codepages/4.5.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Text.Encoding.CodePages.dll",
-        "lib/net461/System.Text.Encoding.CodePages.dll",
-        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "system.text.encoding.codepages.4.5.1.nupkg.sha512",
-        "system.text.encoding.codepages.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.Text.Encoding.Extensions/4.0.11": {
       "sha512": "jtbiTDtvfLYgXn8PTfWI+SiBs51rrmO4AAckx4KR6vFK9Wzf6tI8kcRdsYQNwriUeQ1+CtQbM1W4cMbLXnj/OQ==",
       "type": "package",
@@ -3352,6 +3316,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Mongo.Migration >= 3.1.4",
+      "MongoDB.Driver >= 2.14.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -3399,6 +3364,10 @@
           "Mongo.Migration": {
             "target": "Package",
             "version": "[3.1.4, )"
+          },
+          "MongoDB.Driver": {
+            "target": "Package",
+            "version": "[2.14.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
