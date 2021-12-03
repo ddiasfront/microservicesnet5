@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\U003860\\source\\repos\\microservicesnet5\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj": {}
+    "C:\\Users\\U003860\\Documents\\projetos\\personal\\microservicesnet5\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\U003860\\source\\repos\\microservicesnet5\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj": {
+    "C:\\Users\\U003860\\Documents\\projetos\\personal\\microservicesnet5\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\U003860\\source\\repos\\microservicesnet5\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+        "projectUniqueName": "C:\\Users\\U003860\\Documents\\projetos\\personal\\microservicesnet5\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
         "projectName": "Catalog.API",
-        "projectPath": "C:\\Users\\U003860\\source\\repos\\microservicesnet5\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
+        "projectPath": "C:\\Users\\U003860\\Documents\\projetos\\personal\\microservicesnet5\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
         "packagesPath": "C:\\Users\\U003860\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\U003860\\source\\repos\\microservicesnet5\\src\\Services\\Catalog\\Catalog.API\\obj\\",
+        "outputPath": "C:\\Users\\U003860\\Documents\\projetos\\personal\\microservicesnet5\\src\\Services\\Catalog\\Catalog.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\U003860\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -23,7 +26,6 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Users\\U003860\\AppData\\Roaming\\SAK\\Nuget": {},
-          "https://api.nuget.org/v3/index.json": {},
           "https://xpinvestimentos.pkgs.visualstudio.com/_packaging/PackagesXP/nuget/v3/index.json": {}
         },
         "frameworks": {
@@ -73,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

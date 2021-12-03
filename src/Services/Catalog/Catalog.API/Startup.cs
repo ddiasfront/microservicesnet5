@@ -18,6 +18,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Catalog.API.Entities;
+using Catalog.API.Data;
+using Catalog.API.Repositories;
 
 namespace Catalog.API
 {
@@ -50,6 +52,8 @@ namespace Catalog.API
                 Database = "CatalogDB",
                 VersionFieldName = "TestVersionName" // Optional
             });
+            services.AddScoped<ICatalogContext, CatalogContext>();
+            services.AddScoped<IProductRepository, ProductRepository>();
 
         }
         public class M100_AddNewCar : DatabaseMigration
@@ -71,7 +75,7 @@ namespace Catalog.API
                         Summary= "Summary",
                         Description= "Description",
                         ImageFile= "ImageFile",
-                        Price= 54.93
+                        Price= 54.93m
                     },
                     new Product
                     {
@@ -80,7 +84,7 @@ namespace Catalog.API
                         Summary= "Summary",
                         Description= "Description",
                         ImageFile= "ImageFile",
-                        Price= 88.93d
+                        Price= 88.93m
                     }
                     });
             }
