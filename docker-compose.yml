@@ -1,6 +1,6 @@
 version: '3.1'
 services:
-  mongo:
+  catalogdb:
     image: mongo
     container_name: 'shopping-mongo'
     restart: always
