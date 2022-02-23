@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\Services",
+    "\\src\\Services\\Discount",
+    "\\src\\Services\\Discount\\Discount.API"
   ],
+  "SelectedNode": "\\src\\docker-compose.override.yml",
   "PreviewInSolutionExplorer": false
 }
